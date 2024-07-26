@@ -1,0 +1,170 @@
+/* -------------- google font import -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -------------- universal css resets -------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+*::selection{
+    background-color: #888888;
+}
+
+/* -------------- css variable -------------- */
+:root{
+    /* ------------- font size define */
+    --font-smallest: 0.875rem; /** 14px **/
+    --font-small: 0.98rem; /** 14px **/
+    --font-medium: 1rem;    /** 16px **/
+    --font-medium: 1.2rem;    /** 19px **/
+    --font-x-large: 1.5rem; /** 24px **/
+    --font-x-large2: 1.75rem; /** 28px **/
+    --font-xx-large: 2.375rem; /** 38px **/
+    --font-xx-large2: 3.25rem; /** 52px **/
+    --font-xx-large3: 3.50rem; /** 56px **/
+    --font-xx-large4: 4rem; /** 64px **/
+
+    /* ------------- line height define */
+    --small-height: 0.875rem; /** 14px **/
+    --x-large-height: 1.5rem; /** 24px **/
+    --xx-large2-height: 1.75rem;   /** 28px **/
+    --ex-large2-height: 2rem;   /** 32px **/
+    --exx-large2-height: 3rem;   /** 48px **/
+    --p-height: 143%;
+
+
+    /* ------------- letter spacing define */
+    --ls-0-1-p: 0.1px;
+    --ls-0-2-p: 0.2px;
+    --ls-1-p: 1px;
+    --ls-1-8-p: 1.8%;
+
+    /* ------------- color define */
+    --white-color: #fff;
+    --white-gray: #bebebe;
+    --primary: #171738;
+    --para: #25253d;
+    --primary-2: #29296e;
+    --secondary: #eeeff0;
+    --secondary-2: #eeeff03d;
+    --secondary-3: #eeeff005;
+
+    /* ------------- font family name define */
+    --poppins: "Poppins", sans-serif;
+
+    /* ------------- font weight define */
+    --wt-200: 200;
+    --wt-300: 300;
+    --wt-400: 400;
+    --wt-500: 500;
+    --wt-600: 600;
+    --wt-700: 700;
+    --wt-800: 800;
+}
+
+/* -------------- reusable class -------------- */
+.container{
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Arial";
+}
+
+/* -------------- button style */
+.btn{
+    font-family: var(--poppins);
+    font-size: var(--font-small);
+    font-weight: var(--wt-400);
+    color: var(--white-color);
+    letter-spacing: var(--ls-0-2-p);
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover{
+    background: none;
+    color: var(--primary);
+}
+
+.btn-secondary{
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+    color: var(--primary);
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary);
+    color: var(--white-color);
+}
+
+.card-btn-box .card-btn{
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 50px;
+    border: 1px solid var(--white-color);
+}
+
+/* --------------- section heading */
+.section-heading .outer-text{
+    font-family: var(--poppins);
+    font-size: var(--font-xx-large4);
+    font-weight: var(--wt-800);
+    text-transform: uppercase;
+    color: var(--secondary);
+    position: relative;
+    user-select: none;
+}
+
+.section-heading .inner-text{
+    font-family: var(--poppins);
+    font-size: var(--font-xx-large);
+    font-weight: var(--wt-800);
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: var(--ls-1-p);
+    position: absolute;
+    content: '';
+    top: 67%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------------- section clip path */
+.clip-path-right{
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(100% 0, 0% 100%, 65% 100%);
+    background-color: var(--secondary-2);
+    position: absolute;
+    z-index: -1;
+}
+
+.clip-path-left{
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 100%, 35% 100%);
+    background-color: var(--secondary-2);
+    position: absolute;
+    z-index: -1;
+}
