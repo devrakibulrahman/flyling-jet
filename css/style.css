@@ -574,3 +574,113 @@
     gap: 30px;
 }
 /* ------------------------ contact section end */
+/* ------------------------ main section end ------------------------ */
+
+/* ------------------------ footer section start ------------------------ */
+/* ------------------------ footer section start */
+#footer-section{
+    width: 100%;
+    min-height: 40vh;
+    background-color: var(--primary);
+    position: absolute;
+    z-index: -2;
+}
+
+.footer-right-pl{
+    height: 40vh;
+    background-color: var(--secondary-3);
+}
+
+.footer-container{
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 10px;
+    padding-top: 60px;
+}
+
+.footer-container .box{
+    width: 240px;
+    height: 150px;
+}
+
+.footer-container .box .box-para{
+    font-family: var(--poppins);
+    font-size: var(--font-medium);
+    font-weight: var(--wt-500);
+    margin-bottom: 15px;
+    color: var(--white-color);
+}
+
+.footer-container .box .footer-items .footer-list{
+    font-family: var(--poppins);
+    font-size: var(--font-smallest);
+    font-weight: var(--wt-300);
+    margin-top: 5px;
+}
+
+.footer-container .box .footer-items .footer-list .footer-link{
+    color: var(--white-gray);
+    transition: color 0.2s ease;
+}
+
+.footer-container .box .footer-items .footer-list .footer-link:hover{
+    color: var(--white-color);
+}
+
+.footer-container .box .footer-items .footer-list .link-ho-line{
+    position: relative;
+}
+
+.footer-container .box .footer-items .footer-list .link-ho-line::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 0;
+    bottom: -1px;
+    background-color: var(--white-color);
+    transition: width 0.2s ease;
+}
+
+.footer-container .box .footer-items .footer-list .link-ho-line:hover::after{
+    width: 30%;
+}
+
+.footer-container .box .footer-icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-container .box .footer-icon .footer-list{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-container .box .footer-icon .footer-list .footer-link .icon{
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
+.footer-container .box .footer-icon .footer-list .footer-link .icon:hover{
+    transform: translateY(-10%);
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+}
+
+.footer .footer-copy-text{
+    font-family: var(--poppins);
+    font-size: var(--font-smallest);
+    font-weight: var(--wt-400);
+    line-height: 1.4rem;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+/* ------------------------ footer section end */
+/* ------------------------ footer section end ------------------------ */
