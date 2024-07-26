@@ -512,3 +512,65 @@
     padding: 5px 20px;
 }
 /* ------------------------ college section end */
+
+/* ------------------------ contact section start */
+#contact-section{
+    width: 100%;
+    min-height: 70vh;
+}
+
+.contact-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.contact-container .contact-content{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.contact-container-box{
+    width: 100%;
+    height: 500px;
+    margin-top: 1s0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container-box .contact-content-box{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.contact-container-box .contact-content-box .contact-text{
+    font-family: var(--poppins);
+    font-size: var(--font-xx-large2);
+    font-weight: var(--wt-700);
+    text-transform: capitalize;
+    color: var(--primary);
+    letter-spacing: var(--ls-1-p);
+    line-height: 4.3rem;
+    margin-bottom: 30px;
+}
+
+.contact-container-box .contact-content-box .contact-para{
+    font-family: var(--poppins);
+    font-size: var(--font-small);
+    font-weight: var(--wt-300);
+    color: var(--primary);
+    letter-spacing: var(--ls-0-2-p);
+    margin-bottom: 30px;
+}
+
+.contact-container-box .contact-content-box .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+/* ------------------------ contact section end */
